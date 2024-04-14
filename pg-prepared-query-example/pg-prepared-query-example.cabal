@@ -1,0 +1,48 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           pg-prepared-query-example
+version:        1.0.0
+build-type:     Simple
+
+executable pg-prepared-query-haskell-exe
+  main-is: Main.hs
+  other-modules:
+      Beam
+      LibPQ
+      Types.Storage.Configuration
+      Types.Storage.DB
+      Paths_pg_prepared_query_example
+  hs-source-dirs:
+      App
+  default-extensions:
+      DuplicateRecordFields
+      OverloadedStrings
+      TemplateHaskell
+      StandaloneDeriving
+      TypeFamilies
+      DeriveGeneric
+      TypeSynonymInstances
+      FlexibleInstances
+      FlexibleContexts
+      DeriveAnyClass
+      ScopedTypeVariables
+      RecordWildCards
+  ghc-options: -Wall
+  build-depends:
+      aeson
+    , base
+    , beam-core
+    , beam-postgres
+    , bytestring
+    , free
+    , postgresql-libpq
+    , postgresql-simple
+    , text
+    , time
+    , transformers
+    , unordered-containers
+  default-language: Haskell2010

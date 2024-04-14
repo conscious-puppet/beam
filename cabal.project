@@ -3,3 +3,4 @@ packages:
   beam-migrate
   beam-postgres
   beam-sqlite
+  pg-prepared-query-example

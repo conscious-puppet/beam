@@ -1,0 +1,35 @@
+name: pg-prepared-query-example
+version: 1.0.0
+
+executables:
+  pg-prepared-query-haskell-exe:
+    main: Main.hs
+    source-dirs: App
+    ghc-options:
+      - -Wall
+    default-extensions:
+      - DuplicateRecordFields
+      - OverloadedStrings
+      - TemplateHaskell
+      - StandaloneDeriving
+      - TypeFamilies
+      - DeriveGeneric
+      - TypeSynonymInstances
+      - FlexibleInstances
+      - FlexibleContexts
+      - DeriveAnyClass
+      - ScopedTypeVariables
+      - RecordWildCards
+    dependencies:
+      - base
+      - aeson
+      - transformers
+      - unordered-containers
+      - bytestring
+      - text
+      - time
+      - free
+      - postgresql-libpq
+      - postgresql-simple
+      - beam-core
+      - beam-postgres
